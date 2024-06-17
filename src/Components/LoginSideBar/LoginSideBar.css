@@ -1,0 +1,91 @@
+
+.LoginSideBar {
+  position: fixed;
+  right: -360px;
+  top: 0;
+  height: 100%;
+  max-width: 360px;
+  width: 100%;
+  transition: ease 0.5s;
+  background-color: rgb(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+}
+.LoginSideBar.active{
+    right: 0    ;
+}
+.LoginSideBar-close {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  cursor: pointer;
+}
+.LoginSideBar-inner {
+  padding: 8rem 1.25rem;
+  height: 100%;
+}
+.LoginSideBar-top {
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+.LoginSideBar-items {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+.LoginSideBar-items input {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding: 0.8rem 1.25rem 0.8rem 2.5rem;
+  color: #fff;
+}
+.LoginSideBar-items input:focus + label,
+.LoginSideBar-items input:valid + label {
+  transform: translateY(-165%) translateX(-70%);
+  font-size: 0.9rem;
+}
+.LoginSideBar-items label {
+  transition: all 0.5s;
+  position: absolute;
+  left: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.LoginSideBar-items svg {
+  width: 30px;
+  position: absolute;
+  left: 0.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+}
+.LoginSideBar-description {
+  text-align: right;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.LoginSideBar-description a {
+  color: #363638;
+}
+.LoginSideBar-btn button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  text-align: center;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to left , #343138, #565c6d);
+}

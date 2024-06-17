@@ -1,0 +1,85 @@
+.Header {
+  padding: 2rem 0;
+  width: 100%;
+  z-index: 99;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 0.5s;
+  background-color: black;
+}
+.Header.fixed {
+  padding: 1.5rem 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.headerContainer {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+  transition: all 0.5s;
+}
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.nav-menu:hover a {
+  filter: blur(3px) grayscale(100%);
+}
+.nav-menu a:hover {
+  filter: blur(0) grayscale(0);
+}
+.nav-menu .active::before {
+  opacity: 1;
+  transform: translateY(-60%) translateX(-8px);
+}
+.nav-menu a {
+  transition: all 0.5s;
+}
+.nav-menu a::before {
+  content: "[";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-60%) translateX(-15px);
+  transition: all 0.5s;
+  opacity: 0;
+}
+.nav-menu a:hover::before {
+  opacity: 1;
+  transform: translateY(-60%) translateX(-8px);
+}
+.headerMore-details {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.headerMore-Sing {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.headerMore-details div {
+  height: 30px;
+}
+.headerMore-lang img {
+  transform: scale(1.1);
+}
+.headerMore-Sing img {
+  transform: scale(1.1);
+}

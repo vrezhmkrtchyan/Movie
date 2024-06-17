@@ -1,0 +1,98 @@
+.TrendingMovies {
+  padding: 4rem 0 3rem 0;
+}
+.TrendingMovies-top {
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+}
+.splide__slide {
+  max-width: 275px;
+  width: 100%;
+  margin-right: 1rem !important;
+}
+.movie-card img {
+  width: 100%;
+}
+.splide__pagination {
+  bottom: -1.5em !important;
+}
+.movie-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.movie-card:hover img {
+  transform: scale(1.1);
+}
+.movie-card img {
+  transition: ease 0.5s;
+}
+.movie-card:hover .movieCardOverlay {
+  opacity: 1;
+  visibility: visible;
+}
+.movieCardOverlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  backdrop-filter: blur(5px);
+}
+.moveiCardOverlay-info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 0.5rem;
+  width: 100%;
+  text-transform: capitalize;
+}
+.moveiCardOverlay-info h2 {
+  font-size: 1.6rem;
+}
+.moveiCardOverlay-info p {
+  height: 92px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+.movieCardOverlay-details {
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  text-align: right;
+}
+.movieCardOverlay-details span i {
+  margin-right: 0.5rem;
+  font-size: 1.4rem;
+}
+.movieCardOverlay-details span {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+.movieCardOverlay-details span:last-child {
+  margin-bottom: 0;
+}
+.ShowMore-btn {
+  border: none;
+  margin-top: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  display: inline-block;
+  text-decoration: none;
+}
