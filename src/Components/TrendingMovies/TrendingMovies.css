@@ -12,6 +12,7 @@
 }
 .movie-card img {
   width: 100%;
+  height: 100%;
 }
 .splide__pagination {
   bottom: -1.5em !important;
@@ -20,6 +21,7 @@
   position: relative;
   overflow: hidden;
   transition: all 0.5s;
+  height: 100%;
 }
 .movie-card:hover img {
   transform: scale(1.1);

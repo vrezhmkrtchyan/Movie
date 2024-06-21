@@ -16,6 +16,7 @@ const MoviesDataWithVideosSlice = createSlice({
 
     })
     .addCase(fetchGetMoviesDataWithVideos.fulfilled, (state, {payload}) => {
+       state.isLoading = true;
       state.data = payload;
     })
     .addCase(fetchGetMoviesDataWithVideos.rejected, (state, {payload}) => {

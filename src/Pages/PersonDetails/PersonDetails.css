@@ -1,0 +1,148 @@
+.PersonDetails {
+  margin-top: 8.313rem;
+}
+.PersonDetails-row {
+  position: relative;
+  padding: 2rem 1rem;
+  background-image: url("./PersonDetailsIMG/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.PersonDetails-row::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: -1;
+  transition: all 0.5s;
+}
+.PersonDetails-left {
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  min-height: 750px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.PersonDetails-leftImg {
+  flex: 1 1 8%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.PersonDetails-leftImg:hover img {
+  filter: blur(5px);
+  transform: scale(1.2);
+}
+.PersonDetails-leftImg:hover .ProfileDetails-leftOverlay {
+  opacity: 1;
+  visibility: visible;
+
+}
+.PersonDetails-leftImg img {
+  object-fit: cover;
+  width: 100%;
+  height: 550px;
+  transition: all 0.5s;
+  display: block;
+}
+.PersonDetails-leftInfo {
+  flex: 3 1;
+  text-transform: capitalize;
+}
+.PersonDetails-leftInfo h1 {
+  font-size: 4rem;
+}
+.PersonDetails-leftInfo p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+.PersonDetails-leftInfo span {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.ProfileDetails-leftOverlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.PersonDetails .swiper-wrapper{
+  margin-bottom: 2rem !important;
+  align-items: center;
+}
+.PersonDetails .swiper-slide{
+  width: 250px !important;
+}
+.PersonDetailsMovies-items{
+  min-height: 300px;
+}
+.PersonDetailsMovies-items:hover .PersonDetailsMovies-itemsInfo{
+  opacity: 1;
+}
+.PersonDetailsMovies-itemsImg{
+  position: relative;
+}
+.PersonDetailsMovies-itemsImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+.mySwiper .swiper-pagination-bullet {
+  background: #fff;
+  margin: 0 5px;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background: #ff6b6b;
+  opacity: 1;
+}
+.PersonDetailsMovies-itemsInfo{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.PersonDetails-btn{
+  display: inline-block;
+}
+.PersonDetails-btn a{
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+}

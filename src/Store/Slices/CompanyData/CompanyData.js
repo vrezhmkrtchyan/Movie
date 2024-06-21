@@ -15,7 +15,9 @@ const CompanyDataSlice = createSlice({
 
     })
     .addCase(fetchCompanyData.fulfilled, (state, {payload}) => {
+       state.isLoading = true;
         state.data = payload
+        
     })
     .addCase(fetchCompanyData.rejected, (state, {payload}) => {
         

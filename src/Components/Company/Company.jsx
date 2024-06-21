@@ -3,9 +3,10 @@ import Marquee from "react-fast-marquee";
 import "./Company.css";
 import { useSelector } from "react-redux";
 import { selectCompanyData } from "../../Store/Slices/CompanyData/CompanyData";
+import Loading from "../../Components/Loading/Loading";
 
 const Company = () => {
-  const { data } = useSelector(selectCompanyData);
+  const { data, isLoading } = useSelector(selectCompanyData);
 
   return (
     <div className="Company">
@@ -13,14 +14,17 @@ const Company = () => {
         <h1>Most Popular Studios</h1>
       </div>
       <Marquee className="marquee">
-        {data.length > 0 &&
+        {isLoading ? (
           data.map((el, idx) => (
             <div key={idx} className="child">
               <div className="gradient">
                 <img src={el.image} alt="" />
               </div>
             </div>
-          ))}
+          ))
+        ) : (
+          <Loading />
+        )}
       </Marquee>
     </div>
   );

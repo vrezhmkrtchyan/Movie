@@ -10,10 +10,10 @@ import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import "./mainSlider.css";
 import { useSelector } from "react-redux";
 import { selectMainMoviesData } from "../../Store/Slices/mainMoviesData/mainMoviesData";
+import Loading from "../../Components/Loading/Loading";
 
 const MainSlider = () => {
-  const MoviesArraySlider = useSelector(selectMainMoviesData);
-  const MoviesArraySliderData = MoviesArraySlider.data;
+  const { data, isLoading } = useSelector(selectMainMoviesData);
 
   return (
     <div className="MainSlider">
@@ -37,13 +37,11 @@ const MainSlider = () => {
         modules={[EffectCoverflow, Pagination, Autoplay]}
         className="mySwiper"
       >
-        {MoviesArraySliderData.map((el, idx) => {
-          return (
+        {isLoading ? (
+          (
+          data.map((el, idx) => (
             <SwiperSlide key={idx}>
-              <img
-                src={`https://image.tmdb.org/t/p/original/${el.backdrop_path}`}
-                alt={el.original_title}
-              />
+              <img src={`https://image.tmdb.org/t/p/original/${el.backdrop_path}`} alt={el.original_title} />
               <div className="Swiper-info">
                 <h1>{el.original_title}</h1>
                 <p>{el.overview}</p>
@@ -57,8 +55,9 @@ const MainSlider = () => {
                 <p>{el.release_date}</p>
               </div>
             </SwiperSlide>
-          );
-        })}
+          ))
+        )
+        ) : <Loading/>}
       </Swiper>
     </div>
   );

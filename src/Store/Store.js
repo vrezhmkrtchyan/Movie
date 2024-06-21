@@ -9,6 +9,10 @@ import { CompanyDataReducer } from "./Slices/CompanyData/CompanyData";
 import { MovieDetailsReducer } from "./Slices/MovieDetails/MovieDetails";
 import { SemilarMoviesReducer } from "./Slices/SemilarMoviesData/SemilarMoviesData";
 import { GenresDetailsReducer } from "./Slices/GenresDetailsData/GenresDetailsData";
+import { ActorsDataReducer } from "./Slices/ActorsData/ActorsData";
+import { RegisterDataReducer } from "./Slices/RegisterData/RegisterData";
+import { SeriesMainDataReducer } from "./Slices/SeriesMainData/SeriesMainData";
+import { SearchDataReducer } from "./Slices/SearchData/SearchData";
 
 const Store = configureStore({
   reducer: {
@@ -22,6 +26,10 @@ const Store = configureStore({
     MovieDetails: MovieDetailsReducer,
     SemilarMovies: SemilarMoviesReducer,
     GenresDetailsData: GenresDetailsReducer,
+    ActorsData: ActorsDataReducer,
+    RegisterData: RegisterDataReducer,
+    SeriesMainData: SeriesMainDataReducer,
+    SearchData: SearchDataReducer,
   },
 });
 

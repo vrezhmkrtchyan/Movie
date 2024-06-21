@@ -4,23 +4,19 @@ import {fetchTopSectionData} from '../TopSectionData/API'
 const TopSectionDataSlice = createSlice({
   name: "TopSectionData",
   initialState: {
-    data: []
+    data: [],
+    isLoading: false,
   },
-  reducers: {
-
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
-    .addCase(fetchTopSectionData.pending, (state, {payload}) => {
-
-    })
-    .addCase(fetchTopSectionData.fulfilled, (state, {payload}) => {
-        state.data = payload
-    })
-    .addCase(fetchTopSectionData.rejected, (state, {payload}) => {
-        
-    })
-  }
+      .addCase(fetchTopSectionData.pending, (state, { payload }) => {})
+      .addCase(fetchTopSectionData.fulfilled, (state, { payload }) => {
+         state.isLoading = true;
+        state.data = payload;
+      })
+      .addCase(fetchTopSectionData.rejected, (state, { payload }) => {});
+  },
 });
 
 export const TopSectionDataReducer = TopSectionDataSlice.reducer

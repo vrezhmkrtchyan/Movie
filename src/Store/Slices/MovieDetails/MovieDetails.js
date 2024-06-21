@@ -6,31 +6,23 @@ const MovieDetailsSlice = createSlice({
   initialState: {
     data: {},
     videoData: [],
+    isLoading: false,
   },
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchMovieDetails.pending, (state) => {
-       
-      })
+      .addCase(fetchMovieDetails.pending, (state) => {})
       .addCase(fetchMovieDetails.fulfilled, (state, { payload }) => {
-        
+        state.isLoading = true;
         state.data = payload;
       })
-      .addCase(fetchMovieDetails.rejected, (state, {payload}) => {
-        
-
-      })
-      .addCase(fetchMovieDetailsVideo.pending, (state) => {
-       
-      })
+      .addCase(fetchMovieDetails.rejected, (state, { payload }) => {})
+      .addCase(fetchMovieDetailsVideo.pending, (state) => {})
       .addCase(fetchMovieDetailsVideo.fulfilled, (state, { payload }) => {
-      
+        state.isLoading = true;
         state.videoData = payload;
       })
-      .addCase(fetchMovieDetailsVideo.rejected, (state, {paylaod}) => {
-       
-      });
+      .addCase(fetchMovieDetailsVideo.rejected, (state, { paylaod }) => {});
   },
 });
 

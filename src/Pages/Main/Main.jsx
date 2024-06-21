@@ -5,6 +5,8 @@ import GenresSection from '../../Components/GenresSection/GenresSection';
 import TopSection from '../../Components/TopSection/TopSection';
 import UpComing from '../../Components/UpComing/UpComing';
 import Company from '../../Components/Company/Company';
+import NowPlayingMovies from '../../Components/NowPlayingMovies/NowPlayingMovies';
+import PopularMovies from '../../Components/PopularMovies/PopularMovies';
 
 const Main = () => {
     return (
@@ -15,6 +17,8 @@ const Main = () => {
         <TrendingMovies />
         <TopSection />
         <UpComing />
+        <NowPlayingMovies/>
+        <PopularMovies/>
       </div>
     );
 }

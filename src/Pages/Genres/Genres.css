@@ -15,6 +15,17 @@
 .Genres {
   margin-top: 8.313rem;
 }
+.Genres-leftTop-Link{
+  margin-bottom: 2rem;
+}
+.Genres-leftTop-Link a{
+  text-decoration: none;
+  color: #fff;
+}
+.Genres-leftTop-Link span{
+  display: inline-block;
+  margin: 0 0.5rem;
+}
 .Genres-containerFluid {
   padding: 0 1rem;
 }

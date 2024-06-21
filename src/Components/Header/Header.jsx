@@ -4,11 +4,13 @@ import search from "../Header-img/search-interface-symbol.png";
 import lang from "../Header-img/internet.png";
 import sign from "../Header-img/add-user.png";
 import LoginSideBar from "../LoginSideBar/LoginSideBar";
+import SearchBar from "../SearchBar/SearchBar";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isView, setIsView] = useState(false)
+  const [isSearch, setIsSearch] = useState(false)
   const [isFixed, setIsFixed] = useState(false)
 
   useEffect(() => {
@@ -41,13 +43,10 @@ const Header = () => {
           <nav className="nav-block">
             <ul className="nav-menu">
               <li className="nav-list">
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/">Movies</NavLink>
               </li>
               <li className="nav-list">
-                <NavLink to="/movies">Movies</NavLink>
-              </li>
-              <li className="nav-list">
-                <NavLink to="/tv-shows">TV Shows</NavLink>
+                <NavLink to="/tv-serials">TV Shows</NavLink>
               </li>
               <li className="nav-list">
                 <NavLink to="/genres">Genres</NavLink>
@@ -55,7 +54,10 @@ const Header = () => {
             </ul>
           </nav>
           <div className="headerMore-details">
-            <div className="headerMore-search">
+            <div
+              className="headerMore-search"
+              onClick={() => setIsSearch(true)}
+            >
               <img src={search} alt="" width={30} />
             </div>
             <div className="headerMore-lang">
@@ -69,6 +71,11 @@ const Header = () => {
         </div>
       </div>
       <LoginSideBar isView={isView} setIsView={setIsView} />
+      <SearchBar
+        isSearch={isSearch}
+        setIsSearch={setIsSearch}
+        search={search}
+      />
     </div>
   );
 };

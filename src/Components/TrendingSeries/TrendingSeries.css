@@ -1,0 +1,62 @@
+.TrendingSeries .swiper-slide {
+  height: 750px;
+  position: relative;
+  z-index: 1;
+}
+.TrendingSeries .swiper-slide::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.TrendingSeries .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.TrendingSeries .Swiper-infoSeries {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.TrendingSeries .Swiper-infoSeries h1{
+    font-size: 4rem;
+}
+.TrendingSeries .Swiper-infoSeries p{
+    font-size: 1.1rem;
+    max-width: 65%;
+    width: 65%;
+    text-transform: capitalize;
+    margin: 0 auto;
+}
+.Swiper-popSeries{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.5s;
+    white-space: nowrap;
+}
+.Swiper-dateSeries{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    transition: all 0.5s;
+}

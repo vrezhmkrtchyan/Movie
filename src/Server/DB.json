@@ -1,197 +1,297 @@
 {
   "MoviesArrayWithVideo": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Knox Goes Away",
       "description": "Killer John Knox (Michael Keaton) has excellent manners and an icy heart. He never makes mistakes and doesn’t feel sorry for anyone, but the years still take their toll. Feeling the first symptoms of memory loss, John flies to San Francisco and goes to the doctor. He is given a disappointing diagnosis - dementia.",
       "release_date": "2024-03-15",
       "duration": "2h 10min",
-      "genre": ["Drama", "  " , "Thriller"],
+      "genre": [
+        "Drama",
+        "  ",
+        "Thriller"
+      ],
       "director": "David Fincher",
-      "cast": ["Michael Keaton", "  ", "Scarlett Johansson", "  ", "Idris Elba"],
+      "cast": [
+        "Michael Keaton",
+        "  ",
+        "Scarlett Johansson",
+        "  ",
+        "Idris Elba"
+      ],
       "key": "https://cdp18.cdn.okko.tv/data/cid/eb6706d5e888-1718738896-Ng7FUfVv1lBS279K-z6Myg/storage119/trl/512d9775-eefb-4dfc-9a03-e4d3cc501b16.webm"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Guy Ritchie's The Covenant",
       "description": "American military forces landed in Afghanistan after September 11, 2001. It’s already 2018, and no one is going anywhere. Sergeant John Kinley (Jake Gyllenhaal) leads a team searching for clandestine weapons factories. The work is extremely dangerous and does not always bring results.",
       "release_date": "2023-11-25",
       "duration": "2h 30min",
-      "genre": ["Action", "  " , "Thriller"],
+      "genre": [
+        "Action",
+        "  ",
+        "Thriller"
+      ],
       "director": "Guy Ritchie",
-      "cast": ["Jake Gyllenhaal", "  ", "Emily Blunt", "  ", "Idris Elba"],
+      "cast": [
+        "Jake Gyllenhaal",
+        "  ",
+        "Emily Blunt",
+        "  ",
+        "Idris Elba"
+      ],
       "key": "https://cdp30.cdnvideo.okko.tv/data/cid/eb6706d5e888-1718742643-RpFk13riotia71fSTkP4OQ/storage107/trl/f0dcebea-c7b5-4ca7-a72d-66c66ffc1740.webm"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Plane",
       "description": "Tom Harris is a CIA operative who has just completed work on a secret mission in Iran. His new task is to conduct an equally secret operation in Afghanistan. As a result of an information leak, his identity turns out to be known to the intelligence services of Iran, Afghanistan and Pakistan, who immediately go in search of Harris.",
       "release_date": "2023-07-20",
       "duration": "2h 5min",
-      "genre": ["Action", "  " , "Thriller"],
+      "genre": [
+        "Action",
+        "  ",
+        "Thriller"
+      ],
       "director": "Christopher Nolan",
-      "cast": ["Tom Hardy", "  ", "Emily Blunt", "  ", "Michael B. Jordan"],
+      "cast": [
+        "Tom Hardy",
+        "  ",
+        "Emily Blunt",
+        "  ",
+        "Michael B. Jordan"
+      ],
       "key": "https://cdp27.cdn.okko.tv/data/cid/eb6706d5e888-1718739408-H32ZL5q5gLumAcjm9DUaSQ/storage103/trl/f9352c7d-b13a-41ab-8b69-85cff9fc8f73.webm"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Arrival",
       "description": "The premiere of the new film by Canadian director Denis Villeve took place in November 2016. The film's script is based on a story by Tad Chang. Unidentified ships have arrived on our Earth and have not moved for a long time. The task of the population of our planet is to find out who they are and why they came.",
       "release_date": "2022-11-11",
       "duration": "2h 20min",
-      "genre": ["Sci-Fi", "  " , "Drama"],
+      "genre": [
+        "Sci-Fi",
+        "  ",
+        "Drama"
+      ],
       "director": "Denis Villeneuve",
-      "cast": ["Amy Adams", "  ", "Jeremy Renner", "  ", "Forest Whitaker"],
+      "cast": [
+        "Amy Adams",
+        "  ",
+        "Jeremy Renner",
+        "  ",
+        "Forest Whitaker"
+      ],
       "key": "https://cdp10.cdnvideo.okko.tv/data/cid/e0de21eb50d1-1718731414-QWv-x_8d5Gkfp_AWpCu9_A/storage104/trl/ec215ac7-24fb-40b2-9803-100ac17de41e.webm"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "John Wick: Chapter 4",
       "description": "The hunt for John Wick (Keanu Reeves) continues, and the rogue killer, in turn, tries to deal with all the members of the Board of Clans. The enemies have already done so many things that no one can come out of this confrontation alive.",
       "release_date": "2024-05-22",
       "duration": "2h 15min",
-      "genre": ["Action", "  " , "Thriller"],
+      "genre": [
+        "Action",
+        "  ",
+        "Thriller"
+      ],
       "director": "Chad Stahelski",
-      "cast": ["Keanu Reeves", "   ", "Halle Berry", "  ", "Laurence Fishburne"],
+      "cast": [
+        "Keanu Reeves",
+        "   ",
+        "Halle Berry",
+        "  ",
+        "Laurence Fishburne"
+      ],
       "key": "https://cdp8-msk2.cdnvideo.okko.tv/data/cid/eb6706d5e888-1718742075-frT77B_V1euPMgbkHP0T7A/storage112/trl/1d50ebf8-ada6-484b-baa9-cc558898c875.webm"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Oppenheimer",
       "description": "In his youth in the 1920s, Robert Oppenheimer (Cillian Murphy) studied with the best physicists in Europe. In Switzerland, the mentor of the young talent was Werner Heisenberg (Matthias Schweighöfer), and he was also personally acquainted with Niels Bohr (Kenneth Branagh). ",
       "release_date": "2023-12-15",
       "duration": "2h 25min",
-      "genre": ["Biography", "  ", "Drama"],
+      "genre": [
+        "Biography",
+        "  ",
+        "Drama"
+      ],
       "director": "Christopher Nolan",
-      "cast": ["Cillian Murphy", "  ", "Matthias Schweighöfer", "  ", "Kenneth Branagh"],
+      "cast": [
+        "Cillian Murphy",
+        "  ",
+        "Matthias Schweighöfer",
+        "  ",
+        "Kenneth Branagh"
+      ],
       "key": "https://cdp10.cdn.okko.tv/data/cid/eb6706d5e888-1718746838-_DIlyL24-sXp9-oF35yf4A/storage109/trl/153868ea-f6e5-4a10-89d0-08be219aa5fa.webm"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Interstellar",
       "description": "The planet is on the verge of death: worldwide drought, mass death of plants and animals and dust storms lead to food shortages. The only thing that can still survive in the new conditions is corn, so humanity is desperately trying to invent original ways to save the crop. ",
       "release_date": "2014-11-07",
       "duration": "2h 49min",
-      "genre": ["Sci-Fi", "  ", "Adventure"],
+      "genre": [
+        "Sci-Fi",
+        "  ",
+        "Adventure"
+      ],
       "director": "Christopher Nolan",
-      "cast": ["Matthew McConaughey", "  ", "Anne Hathaway", "  ", "Jessica Chastain"],
+      "cast": [
+        "Matthew McConaughey",
+        "  ",
+        "Anne Hathaway",
+        "  ",
+        "Jessica Chastain"
+      ],
       "key": "https://cdp26.cdn.okko.tv/data/cid/eb6706d5e888-1718733473-LqxgESoVXhR29vMIc-sNrQ/storage109/trl/5489d72a-0513-4f0c-8dad-c2989616a002.webm"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "The Gentlemen",
       "description": "Matthew McConaughey, Colin Farrell and Hugh Grant show how not to get dirty even in the dirtiest matters. Guy Ritchie's heroes have settled down, but have not lost their dexterity. Now they mentor the younger generation in a crime comedy about gentlemen with manners and gangsters with nicknames.",
       "release_date": "2022-12-23",
       "duration": "2h 8min",
-      "genre": ["Action", "  ", "Comedy"],
+      "genre": [
+        "Action",
+        "  ",
+        "Comedy"
+      ],
       "director": "Guy Ritchie",
-      "cast": ["Matthew McConaughey", "  ", "Charlie Hunnam", "  ", "Henry Golding"],
+      "cast": [
+        "Matthew McConaughey",
+        "  ",
+        "Charlie Hunnam",
+        "  ",
+        "Henry Golding"
+      ],
       "key": "https://cdp26.cdn.okko.tv/data/cid/eb6706d5e888-1718734854-K9FbAJpZorC9gbXd4G-1rw/storage101/trl/ea76c982-555f-40a7-9a4a-79a024eabe26.webm"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Avengers: Infinity War",
       "description": "Two years after the Battle of Leipzig and immediately after the destruction of Asgard, superheroes learn that the mad titan Thanos is seeking to collect the Infinity Stones, which are the most powerful artifacts in the universe. With their help, he plans to destroy half of all life in the Universe.",
       "release_date": "2018-04-27",
       "duration": "2h 29min",
-      "genre": ["Action", "  " , "Adventure"],
-      "directors": ["Anthony Russo", "  ", "Joe Russo"],
-      "cast": ["Robert Downey Jr.", "Chris Hemsworth", "Mark Ruffalo"],
+      "genre": [
+        "Action",
+        "  ",
+        "Adventure"
+      ],
+      "directors": [
+        "Anthony Russo",
+        "  ",
+        "Joe Russo"
+      ],
+      "cast": [
+        "Robert Downey Jr.",
+        "Chris Hemsworth",
+        "Mark Ruffalo"
+      ],
       "key": "https://cdp11.cdn.okko.tv/data/cid/eb6706d5e888-1718747039-Dkaz9pma0wRxBc7UdiLNtA/storage102/trl/f940b7e1-6ee7-4ec2-a176-1cc94ee3ec50.webm"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "1 + 1",
       "description": "A life-affirming comedy about friendship and overcoming difficulties. Philip needs care, and from all the applicants for the position of assistant, he chooses the young Senegalese Driss with a criminal past.",
       "release_date": "2011-11-02",
       "duration": "1h 52min",
-      "genre": ["Comedy", "  " , "Drama"],
+      "genre": [
+        "Comedy",
+        "  ",
+        "Drama"
+      ],
       "director": "Olivier Nakache, Éric Toledano",
-      "cast": ["François Cluzet", "  ", "Omar Sy", "  ", "Anne Le Ny"],
+      "cast": [
+        "François Cluzet",
+        "  ",
+        "Omar Sy",
+        "  ",
+        "Anne Le Ny"
+      ],
       "key": "https://cdp28.cdn.okko.tv/data/cid/eb6706d5e888-1718742949-4b0OwAG8rDCXnU6igXv3Gg/storage112/trl/088c69a7-6e44-40ea-91c3-71428663d7ab.webm"
     }
   ],
   "CompaniesArray": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Pixar",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Pixar_logo.svg/1920px-Pixar_logo.svg.png?20090912113016"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "DreamWorks",
       "image": "https://seeklogo.com/images/D/dreamworks-animation-logo-F69EFB5154-seeklogo.com.png"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Warner Bros",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/800px-Warner_Bros_logo.svg.png?20190502135417"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Universal Pictures",
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Universal_Pictures_logo.svg"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Paramount Pictures",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Paramount_Pictures_Corporation_logo.svg/762px-Paramount_Pictures_Corporation_logo.svg.png?20240603171007"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Sony Pictures",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Sony_pictures_logo.png/387px-Sony_pictures_logo.png?20130602231207"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "20th Century Studios",
       "image": "https://seeklogo.com/images/1/20th-century-studios-logo-85F2B77111-seeklogo.com.png"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Lionsgate",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lionsgate_Logo.svg/799px-Lionsgate_Logo.svg.png"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Metro-Goldwyn-Mayer",
       "image": "https://cdn.worldvectorlogo.com/logos/metro-goldwyn-mayer.svg"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Columbia Pictures",
       "image": "https://cdn.worldvectorlogo.com/logos/columbia-pictures-logo-1.svg"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "New Line Cinema",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/New_Line_Cinema.svg/800px-New_Line_Cinema.svg.png?20200619154816"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Walt Disney Pictures",
       "image": "https://cdn.worldvectorlogo.com/logos/walt-disney-pictures.svg"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "TriStar Pictures",
       "image": "https://cdn.worldvectorlogo.com/logos/tristar-pictures-present-day-logo.svg"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Miramax",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Miramax_Films_logo.svg/300px-Miramax_Films_logo.svg.png?20130930204701"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Studio Ghibli",
       "image": "https://cdn.worldvectorlogo.com/logos/studio-ghibli-logo.svg"
     }
   ],
-  "LoginUsersData": [
-    
-  ],
+  "LoginUsersData": [],
   "RegisterUsersData": [
-
+   
   ]
 }

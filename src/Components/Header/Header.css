@@ -77,6 +77,9 @@
 .headerMore-details div {
   height: 30px;
 }
+.headerMore-search{
+  cursor: pointer;
+}
 .headerMore-lang img {
   transform: scale(1.1);
 }

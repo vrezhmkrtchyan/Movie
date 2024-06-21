@@ -6,9 +6,10 @@ import { useSelector } from "react-redux";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import { selectTopSectionDate } from "../../Store/Slices/TopSectionData/TopSectionData";
 import { NavLink, useNavigate } from "react-router-dom";
+import Loading from "../Loading/Loading";
 
 const TopSection = () => {
-  const { data } = useSelector(selectTopSectionDate);
+  const { data, isLoading } = useSelector(selectTopSectionDate);
   const splideRef = useRef(null);
   const navigate = useNavigate();
 
@@ -41,7 +42,7 @@ const TopSection = () => {
       <div className="splide" ref={splideRef}>
         <div className="splide__track">
           <ul className="splide__list">
-            {data.length > 0 &&
+            { isLoading ?
               data.map((el, idx) => (
                 <li className="splide__slide" key={el.id}>
                   <div className="TopSection-items">
@@ -62,7 +63,7 @@ const TopSection = () => {
                     </div>
                   </div>
                 </li>
-              ))}
+              )): <Loading/>}
           </ul>
         </div>
       </div>

@@ -4,7 +4,8 @@ import {fetchUpComingData} from '../UpComingData/API'
 const UpComingDataSlice = createSlice({
     name: "UpComingData",
     initialState: {
-        data: []
+        data: [],
+        isLoading: false,
     },
     reducers: {
 
@@ -15,6 +16,7 @@ const UpComingDataSlice = createSlice({
 
         })
         .addCase(fetchUpComingData.fulfilled, (state, {payload}) => {
+             state.isLoading = true;
             state.data = payload
         })
         .addCase(fetchUpComingData.rejected, (state, {payload}) => {

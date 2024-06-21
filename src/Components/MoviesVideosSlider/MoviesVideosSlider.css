@@ -1,11 +1,11 @@
 .MoviesVideosSlider{
   margin-top: 8.313rem;
 }
-.swiper-slide {
+.MoviesVideosSlider .swiper-slide {
   height: 770px;
   z-index: 1;
 }
-.swiper-pagination-bullet {
+.MoviesVideosSlider .swiper-pagination-bullet {
   background-color: #fff !important;
 }
 .MovieVideo-item{
@@ -33,7 +33,7 @@
     margin-bottom: 0.5rem;
 }
 
-.swiper-slide::before{
+.MoviesVideosSlider .swiper-slide::before{
     content: "";
     position: absolute;
     left: 0;

@@ -4,6 +4,7 @@
 .Register-row {
   display: flex;
   gap: 1rem;
+  padding: 0 1rem;
 }
 .Register-left {
   flex: 1 1 0;
@@ -45,6 +46,7 @@
 }
 .Register-right {
   flex: 1 1 0;
+  padding: 4rem 0 0 0;
 }
 .Register-leftInfo {
   position: absolute;
@@ -55,6 +57,7 @@
   padding: 0 1rem;
   text-align: center;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 .Register-leftInfo h1 {
   visibility: hidden;
@@ -67,5 +70,84 @@
   opacity: 0;
   transition: ease-in-out 0.4s;
   transform: translateY(10px);
-  white-space: nowrap;
+}
+.Register-rightInner-top {
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+.Register-rightInner-top img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.Register-rightInner-top h2 {
+  font-size: 3.4rem;
+}
+.Register-rightInner-groups {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.Register-rightInner-items {
+  width: 100%;
+  position: relative;
+}
+.Register-rightInner-items input {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.5rem 0.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  color: #fff;
+}
+.Register-rightInner-items input:focus + label,
+.Register-rightInner-items input:valid + label{
+  transform: translateY(-150%);
+}
+.Register-rightInner-items input:focus + label + span,
+.Register-rightInner-items input:valid + label + span{
+  width: 100%;
+}
+.Register-rightInner-items label {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  pointer-events: none;
+  transition: ease-out 0.4s;
+}
+.focus-border {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.5s;
+  background-image: linear-gradient(to left, #343138, #565c6d);
+}
+.Register-rightInner-btn {
+  text-align: center;
+}
+.Register-rightInner-btn button {
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 1rem 3rem;
+  border: none;
+  outline: none;
+  background-image: linear-gradient(to left, #343138, #565c6d);
+  transition: all 0.4s;
+  background-size: 200%;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
 }
